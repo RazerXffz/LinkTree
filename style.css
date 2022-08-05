@@ -1,24 +1,25 @@
-body { 
+body {
   position: fixed;
   background-image: url(ImgFundo.png);
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-} 
+  overflow: hidden;
+}
 
-.main{
+.main {
   max-width: 100%;
-  position:fixed;
+  position: fixed;
   left: 37%;
   top: 7%;
   height: 85%;
   width: 28%;
   padding: 0%;
-  display:flex;
+  display: flex;
   background-color: rgb(0, 0, 0);
 }
 
-.NkSimbl { 
+.NkSimbl {
   position: fixed;
   display: flex;
   top: 10%;
@@ -27,7 +28,7 @@ body {
   height: 17%;
 }
 
-.FotoRz { 
+.FotoRz {
   position: fixed;
   display: flex;
   left: 45%;
@@ -36,8 +37,8 @@ body {
   height: 20%;
 }
 
-.h1 { 
-  
+.h1 {
+
   position: fixed;
   display: flex;
   left: 48%;
@@ -48,7 +49,7 @@ body {
   letter-spacing: 2px;
 }
 
-.H2 { 
+.H2 {
   position: fixed;
   display: flex;
   top: 87%;
@@ -58,7 +59,7 @@ body {
   font-size: 35px;
 }
 
-.P1 { 
+.P1 {
   position: fixed;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +79,8 @@ body {
   width: 2%;
   height: 4.4%;
 }
-.zap { 
+
+.zap {
   max-width: 100%;
   position: fixed;
   display: flex;
@@ -89,7 +91,7 @@ body {
 }
 
 
-.discord { 
+.discord {
   max-width: 100%;
   position: fixed;
   display: flex;
@@ -100,7 +102,7 @@ body {
 }
 
 
-.texto-usuario { 
+.texto-usuario {
   position: fixed;
   display: flex;
   cursor: pointer;
@@ -133,11 +135,11 @@ body {
   position: fixed;
   z-index: 1;
   font-size: 80%;
-  
+
 }
 
 #snackbar.show {
-  
+
   visibility: visible;
   -webkit-animation: fadein 0.5ms, fadeout 0.5ms 2.5ms;
   animation: fadein 0.5ms, fadeout 0.5ms 2.5ms;
@@ -194,119 +196,147 @@ body {
     opacity: 0;
   }
 }
-@media only screen and (max-width: 1000px) {
-.NkSimbl{
-  left: 40%;
-  width: 18%;
-  height: 15%;
-}
-.FotoRz{
-  left: 40%;
-  width: 17%;
-  height: 17%;
-}
-.h1{
-  font-size: 120%;
-  left: 44%;
-  top: 43.1%;
- }
- .P1{
-  font-size: 80%;
-  left: 45.5%;
-  top: 47.5%;
- }
- .Insta{
-  left: 39%;
-  top: 55.5%;
-  width: 5%;
-  height: 5%;
- }
- .zap{
-  left: 43.1%;
-  top: 55.8%;
-  width: 5%;
-  height: 4.2%;
- }
- .discord{
-  left: 47.8%;
-  top: 55.7%;
-  width: 4%;
-  height: 4.5%;
- }
- .texto-usuario{
-  left: 52%;
-  top: 56.5%;
-  height: 3%;
-  width: 20%;
-  font-size: 80%;
- }
- #snackbar{
-  left: 41%;
-  bottom: 89.9%;
-  top: 5%;
-  right: 40%;
- }
- .main{
-  left: 40%;
- }
 
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
+
+  .NkSimbl {
+    left: 40%;
+    width: 18%;
+    height: 15%;
+  }
+
+  .FotoRz {
+    left: 40%;
+    width: 17%;
+    height: 17%;
+  }
+
+  .h1 {
+    font-size: 120%;
+    left: 44%;
+    top: 43.1%;
+  }
+
+  .P1 {
+    font-size: 80%;
+    left: 45.5%;
+    top: 47.5%;
+  }
+
+  .Insta {
+    left: 39%;
+    top: 55.5%;
+    width: 5%;
+    height: 5%;
+  }
+
+  .zap {
+    left: 43.1%;
+    top: 55.8%;
+    width: 5%;
+    height: 4.2%;
+  }
+
+  .discord {
+    left: 47.8%;
+    top: 55.7%;
+    width: 4%;
+    height: 4.5%;
+  }
+
+  .texto-usuario {
+    left: 52%;
+    top: 56.5%;
+    height: 3%;
+    width: 20%;
+    font-size: 80%;
+  }
+
+  #snackbar {
+    left: 41%;
+    bottom: 89.9%;
+    top: 5%;
+    right: 40%;
+  }
+
+  .main {
+    left: 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
- .h1{
-  font-size: 60%;
-  left: 44%;
-  top: 42%;
- }
- .H2{
-  font-size: 110%;
-  top: 90%;
-  left: 41%;
-}
- .P1{
-  font-size: 45%;
-  left: 45%;
-  top: 44.5%;
- }
+  body {
+    overflow: hidden;
+  }
 
- .texto-usuario{
-  width: 23%;
-  height: 2%;
-  font-size: 1%;
-  left: 55%;
-  top: 55%;
-  position: fixed;
- }
- .NkSimbl{
-  width: 20%;
-  height: 15%;
- }
- .FotoRz{
-  width: 20%;
-  height: 15%;
- }
- .Insta{
-  left: 39.1%;
-  top: 50.5%;
- }
- .zap{
-  left: 44.1%;
-  top: 50.9%;
- }
- .discord{
-  left: 49.5%;
-  top: 50.6%;
- 
- }
- .texto-usuario{
-  left: 55%;
-  top: 52%;
- }
- #snackbar{
-  left: 40%;
-  bottom: 90.9%;
-  top: 5%;
-  right: 35%;
- }
- 
+  .h1 {
+    font-size: 60%;
+    left: 44%;
+    top: 42%;
+  }
+
+  .H2 {
+    font-size: 110%;
+    top: 90%;
+    left: 41%;
+  }
+
+  .P1 {
+    font-size: 35%;
+    left: 45%;
+    top: 44.5%;
+  }
+
+  .texto-usuario {
+    width: 30%;
+    height: 3%;
+    font-size: 50%;
+    left: 55%;
+    top: 55%;
+    position: fixed;
+  }
+
+  .NkSimbl {
+    width: 20%;
+    height: 15%;
+  }
+
+  .FotoRz {
+    width: 20%;
+    height: 15%;
+  }
+
+  .Insta {
+    left: 39.1%;
+    top: 50.5%;
+  }
+
+  .zap {
+    left: 44.1%;
+    top: 50.9%;
+  }
+
+  .discord {
+    left: 49.5%;
+    top: 50.6%;
+
+  }
+
+  .texto-usuario {
+    left: 55%;
+    top: 52%;
+  }
+
+  #snackbar {
+    text-align: center;
+    left: 40%;
+    bottom: 92%;
+    top: 5%;
+    right: 35%;
+    font-size: 60%;
+  }
+
 }
